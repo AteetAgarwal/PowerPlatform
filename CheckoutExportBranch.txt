@@ -1,0 +1,8 @@
+$solutionName="$(SolutionName)"
+$exportBranchName="export-$(SolutionName)-$(Build.BuildId)"
+cd $(Build.SourceDirectory)
+git config user.email "ateet1989@gmail.com"
+git config user.name "Ateet Agarwal"
+git checkout $(Build.SourceBranchName)
+git checkout -b $exportBranchName
+git -c http.extraheader="AUTHORIZATION:BEARER $(System.AccessToken)" push --set-upstream origin $exportBranchName
