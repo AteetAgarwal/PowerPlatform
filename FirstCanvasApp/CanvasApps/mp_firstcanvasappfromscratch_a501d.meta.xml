@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mp_firstcanvasappfromscratch_a501d</Name>
+  <AppVersion>2022-08-24T14:05:47Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.22083.10.0</CreatedByClientVersion>
+  <MinClientVersion>3.22083.10.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.22083.10","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20220824T135142Z-3.22083.10.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>FirstCanvasAppFromScratch</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"b6e78183-f088-4dc4-a305-00d3c33bcdb8":{"id":"/providers/microsoft.powerapps/apis/shared_excel","displayName":"Excel","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1595/1.0.1595.2986/excel/icon.png","dataSources":["Table1","Table1_1"],"dependencies":["b661b42e-62a2-48f9-a1ae-b0000f3cb4d9"],"dependents":[],"parameterHints":{"b661b42e-62a2-48f9-a1ae-b0000f3cb4d9":{"value":"fileSource"}},"parameterHintsV2":{"fileSource":{"value":"b661b42e-62a2-48f9-a1ae-b0000f3cb4d9"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"66DEA605D712CDC0!163":{"dataSources":{"Table1":{"tableName":"Table1"}}},"66DEA605D712CDC0!166":{"dataSources":{"Table1_1":{"tableName":"Table1"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]},"b661b42e-62a2-48f9-a1ae-b0000f3cb4d9":{"id":"/providers/microsoft.powerapps/apis/shared_onedrive","displayName":"OneDrive","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1586/1.0.1586.2912/onedrive/icon.png","dataSources":[],"dependencies":[],"dependents":["b6e78183-f088-4dc4-a305-00d3c33bcdb8"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/mp_firstcanvasappfromscratch_a501d_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/mp_firstcanvasappfromscratch_a501d_DocumentUri.msapp</DocumentUri>
+</CanvasApp>
