@@ -1,6 +1,7 @@
 $solutionName="$(SolutionName)"
-$exportBranchName="export-$(SolutionName)-$(Build.BuildId)"
-cd $(Build.SourceDirectory)
+#$exportBranchName="export-$(SolutionName)-$(Build.BuildId)"
+$exportBranchName="export-$(SolutionName)"
+cd $(Build.SourcesDirectory)
 git config user.email "ateet1989@gmail.com"
 git config user.name "Ateet Agarwal"
 git checkout $(Build.SourceBranchName)

@@ -1,4 +1,4 @@
-cd $(Build.SourceDirectory)
+cd $(Build.SourcesDirectory)
 git add --all
 git commit -m "$(SolutionName).$(Build.BuildId)"
 git -c http.extraheader="AUTHORIZATION:BEARER $(System.AccessToken)" push
