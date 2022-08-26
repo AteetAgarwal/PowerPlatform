@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{ce9f53ae-8b11-ed11-b83f-6045bdaaabc1}" Name="New business rule" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Newbusinessrule-CE9F53AE-8B11-ED11-B83F-6045BDAAABC1.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
+  <PrimaryEntity>cr669_Customer</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="New business rule" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{cb5324f6-b7ae-4923-b51c-4673e077676e}">
+      <label languagecode="1033" description="Error: VIP level 5 service does not currently exist in South Korea" />
+    </steplabels>
+  </labels>
+</Workflow>
