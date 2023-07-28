@@ -1,0 +1,197 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_b5916"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_7e630"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "bfab14be-3cca-402a-aefd-323258f76b4a"
+          },
+          "type": "Request",
+          "kind": "Http",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "isExportSolution": {
+                  "type": "boolean"
+                },
+                "solutionName": {
+                  "type": "string"
+                },
+                "isManagedSolution": {
+                  "type": "boolean"
+                },
+                "solutionVersion": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Perform_an_unbound_action": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "161f6d63-f7b0-465c-bc07-12ccf83239e7"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "PerformUnboundAction",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "actionName": "ExportSolution",
+                  "item/SolutionName": "@variables('SolutionName')",
+                  "item/Managed": "@bool(triggerBody()?['isManagedSolution'])",
+                  "item/ExportAutoNumberingSettings": false,
+                  "item/ExportCalendarSettings": false,
+                  "item/ExportCustomizationSettings": false,
+                  "item/ExportEmailTrackingSettings": false,
+                  "item/ExportGeneralSettings": false,
+                  "item/ExportMarketingSettings": false,
+                  "item/ExportOutlookSynchronizationSettings": false,
+                  "item/ExportRelationshipRoles": false,
+                  "item/ExportIsvConfig": false,
+                  "item/ExportSales": false,
+                  "item/ExportExternalApplications": false
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Create_file": {
+              "runAfter": {
+                "Perform_an_unbound_action": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "ce4ed1ec-c0be-41d6-9057-bef766b51f2f"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "CreateFile",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://ngsp.sharepoint.com",
+                  "folderPath": "/Shared Documents",
+                  "name": "@concat(variables('SolutionName'),string('.zip'))",
+                  "body": "@base64ToBinary( Body('Perform_an_unbound_action')?['ExportSolutionFile'])"
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runtimeConfiguration": {
+                "contentTransfer": {
+                  "transferMode": "Chunked"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Perform_an_unbound_action_2": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "f0e6c8b2-945c-424f-a689-a14dda9440e0"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_commondataserviceforapps",
+                    "operationId": "PerformUnboundAction",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                  },
+                  "parameters": {
+                    "actionName": "ImportSolution",
+                    "item/OverwriteUnmanagedCustomizations": false,
+                    "item/PublishWorkflows": false,
+                    "item/ImportJobId": "@guid()",
+                    "item/ConvertToManaged": false,
+                    "item/SkipProductUpdateDependencies": false,
+                    "item/HoldingSolution": false,
+                    "item/SkipQueueRibbonJob": false,
+                    "item/AsyncRibbonProcessing": false,
+                    "item/IsTemplateMode": false
+                  },
+                  "authentication": "@parameters('$authentication')"
+                }
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@triggerBody()?['isExportSolution']",
+              "@bool(triggerBody()?['isExportSolution'])"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f029bc50-0263-4dba-86c4-83c0794a24ae"
+          },
+          "type": "If"
+        },
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "8c1c7177-89b5-4ccb-a14d-49be6bcde30d"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "SolutionName",
+                "type": "string",
+                "value": "@{string(triggerBody()?['solutionName'])}"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
