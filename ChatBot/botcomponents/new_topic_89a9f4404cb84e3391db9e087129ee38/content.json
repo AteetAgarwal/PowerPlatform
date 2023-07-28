@@ -1,0 +1,734 @@
+{
+  "intents": [
+    {
+      "triggerQueries": [
+        "I need a help for VM",
+        "I want to generate a ticket",
+        "I want a help to have access to a tablet",
+        "generate a ticket",
+        "software issues",
+        "need access",
+        "need help"
+      ],
+      "dialogId": "new_topic_89a9f4404cb84e3391db9e087129ee38",
+      "isTriggeringEnabled": true,
+      "id": "new_topic_89a9f4404cb84e3391db9e087129ee38",
+      "displayName": "Need help Topic",
+      "createdTime": "2022-08-29T05:59:14.3416348Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    }
+  ],
+  "namedEntities": [
+    {
+      "id": "7d1b43bb-8702-48a6-b6e8-3dd71fa53832",
+      "displayName": "VM"
+    },
+    {
+      "id": "2ba8174e-c6a6-43a9-b146-e4c09eb3f743",
+      "displayName": "Software"
+    },
+    {
+      "id": "49000ab3-7011-4610-80e3-8a896ca4c6d8",
+      "displayName": "Generate Ticket"
+    },
+    {
+      "id": "42ee7f57-264d-4a62-825e-9fd58ca483e6",
+      "displayName": "Others"
+    }
+  ],
+  "dialogs": [
+    {
+      "rootNodeId": "7d673ce4-a545-422b-b16b-6491b590430f",
+      "messageNodes": [
+        {
+          "botMessageId": "d34c9bdb-12aa-4a22-b99d-41d363456f71",
+          "nodeType": "BotMessageNode",
+          "id": "193a1254-a355-410b-9177-e74fae991c38",
+          "defaultTargetNodeId": "4a141d81-3a7d-459a-a841-1eca0a5658db"
+        },
+        {
+          "botMessageId": "4afd3ea3-86dd-4500-ad9a-14566fa6233d",
+          "nodeType": "BotMessageNode",
+          "id": "8411141f-b428-44af-89f4-23013c599a68",
+          "defaultTargetNodeId": "e4ce923c-a768-4cc1-a175-8932b7fe7de4"
+        },
+        {
+          "botMessageId": "c057e85f-d862-463b-bf68-49d2121ef57c",
+          "nodeType": "BotMessageNode",
+          "id": "2e0228b1-275a-4c6a-9c41-c5a9c360c465",
+          "defaultTargetNodeId": "33cde707-415d-4beb-bf78-bac1ecc91d37"
+        },
+        {
+          "botMessageId": "aad8dbd8-aded-4fcf-8179-4f2d14c3ae5b",
+          "nodeType": "BotMessageNode",
+          "id": "85b43e61-9258-404d-9152-91d04a63719d",
+          "defaultTargetNodeId": "497e357c-a0fd-40c6-b867-dd10db68ab37"
+        },
+        {
+          "botMessageId": "083235a8-d8cd-48b6-b7cf-bcd89da5f598",
+          "nodeType": "BotMessageNode",
+          "id": "b34cf917-494b-471d-9cb0-77ab30c1839a",
+          "defaultTargetNodeId": "e2cf8a8d-345d-475d-968c-8a5475ccb490"
+        },
+        {
+          "botMessageId": "cef12af5-e2f7-498b-a3fd-01a18311cda5",
+          "nodeType": "BotMessageNode",
+          "id": "2505b85e-cf59-47a7-9999-bfff41b380fc",
+          "defaultTargetNodeId": "373216da-9541-4d02-9a8e-79dc2cf3a490"
+        },
+        {
+          "botMessageId": "d3656d1d-9390-4af5-ba2a-97238f8a663e",
+          "nodeType": "BotMessageNode",
+          "id": "41f64c72-a318-41ac-adca-85ce3ddf6ca1",
+          "defaultTargetNodeId": "bbf55ec9-6b86-45dd-93e8-fa3a74f6bd2a"
+        }
+      ],
+      "actionNodes": [
+        {
+          "contextVariableId": "79ed9ed7-b98a-4b17-b2cd-a5e43fa7d675",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "{042c76c0-de95-4d39-a436-4f8d079f751d}",
+            "text_1": "{042c76c0-de95-4d39-a436-4f8d079f751d}"
+          },
+          "outputExpressionVariableIds": [
+            "f5d2e72a-46cc-4c7f-8eef-6800f8394637"
+          ],
+          "id": "8c3985da-f860-4657-9af9-2b8eb7811b12",
+          "defaultTargetNodeId": "b34cf917-494b-471d-9cb0-77ab30c1839a"
+        },
+        {
+          "contextVariableId": "a7e4372a-15ca-497e-a5b5-aca09af5ce4b",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "{042c76c0-de95-4d39-a436-4f8d079f751d}",
+            "text_1": "{369fc4b2-0b76-4260-b442-c82b1900fc65}"
+          },
+          "outputExpressionVariableIds": [
+            "9e0929a4-0c6f-4423-a262-08ed312992b0"
+          ],
+          "id": "46ab1ecf-f181-4ecd-a58e-a6329f71f766",
+          "defaultTargetNodeId": "2505b85e-cf59-47a7-9999-bfff41b380fc"
+        },
+        {
+          "contextVariableId": "03689b02-6e1b-4215-8d95-c3089a44f64a",
+          "nodeType": "ActionNode",
+          "inputParameterVariableIdMap": {
+            "text": "{042c76c0-de95-4d39-a436-4f8d079f751d}",
+            "text_1": "{6ded7f95-c0ca-4594-8b7a-00891ddeb0f1}"
+          },
+          "outputExpressionVariableIds": [
+            "f38b08e9-0a50-41aa-a9d1-e4d6d8e47630"
+          ],
+          "id": "3e92d926-8354-4e39-9011-e90ae23bf88d",
+          "defaultTargetNodeId": "41f64c72-a318-41ac-adca-85ce3ddf6ca1"
+        }
+      ],
+      "dialogChangeNodes": [
+        {
+          "targetDialogId": "new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "e2cf8a8d-345d-475d-968c-8a5475ccb490"
+        },
+        {
+          "targetDialogId": "new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "373216da-9541-4d02-9a8e-79dc2cf3a490"
+        },
+        {
+          "targetDialogId": "new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess",
+          "nodeType": "DialogChangeNode",
+          "id": "bbf55ec9-6b86-45dd-93e8-fa3a74f6bd2a"
+        }
+      ],
+      "questionNodes": [
+        {
+          "contextVariableId": "b8d45cf2-bac5-4039-b51e-309ab70ba93a",
+          "nodeType": "QuestionNode",
+          "id": "7d673ce4-a545-422b-b16b-6491b590430f",
+          "defaultTargetNodeId": "193a1254-a355-410b-9177-e74fae991c38"
+        },
+        {
+          "contextVariableId": "042c76c0-de95-4d39-a436-4f8d079f751d",
+          "nodeType": "QuestionNode",
+          "id": "4a141d81-3a7d-459a-a841-1eca0a5658db",
+          "routes": [
+            {
+              "expression": "@equals(parameters('042c76c0-de95-4d39-a436-4f8d079f751d'), '7d1b43bb-8702-48a6-b6e8-3dd71fa53832')",
+              "targetNodeId": "8411141f-b428-44af-89f4-23013c599a68"
+            },
+            {
+              "expression": "@equals(parameters('042c76c0-de95-4d39-a436-4f8d079f751d'), '2ba8174e-c6a6-43a9-b146-e4c09eb3f743')",
+              "targetNodeId": "2e0228b1-275a-4c6a-9c41-c5a9c360c465"
+            },
+            {
+              "expression": "@equals(parameters('042c76c0-de95-4d39-a436-4f8d079f751d'), '49000ab3-7011-4610-80e3-8a896ca4c6d8')",
+              "targetNodeId": "85b43e61-9258-404d-9152-91d04a63719d"
+            },
+            {
+              "expression": "@equals(parameters('042c76c0-de95-4d39-a436-4f8d079f751d'), '42ee7f57-264d-4a62-825e-9fd58ca483e6')"
+            }
+          ],
+          "defaultTargetNodeId": "4a141d81-3a7d-459a-a841-1eca0a5658db"
+        },
+        {
+          "contextVariableId": "1e701a4a-ed5f-429f-90ff-25582bf3b1aa",
+          "nodeType": "QuestionNode",
+          "id": "e4ce923c-a768-4cc1-a175-8932b7fe7de4",
+          "defaultTargetNodeId": "8c3985da-f860-4657-9af9-2b8eb7811b12"
+        },
+        {
+          "contextVariableId": "369fc4b2-0b76-4260-b442-c82b1900fc65",
+          "nodeType": "QuestionNode",
+          "id": "33cde707-415d-4beb-bf78-bac1ecc91d37",
+          "defaultTargetNodeId": "46ab1ecf-f181-4ecd-a58e-a6329f71f766"
+        },
+        {
+          "contextVariableId": "6ded7f95-c0ca-4594-8b7a-00891ddeb0f1",
+          "nodeType": "QuestionNode",
+          "id": "497e357c-a0fd-40c6-b867-dd10db68ab37",
+          "defaultTargetNodeId": "3e92d926-8354-4e39-9011-e90ae23bf88d"
+        }
+      ],
+      "id": "new_topic_89a9f4404cb84e3391db9e087129ee38",
+      "displayName": "Untitled",
+      "createdTime": "2022-08-29T05:59:14.3416348Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    }
+  ],
+  "botMessages": [
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please enter you email address"
+        }
+      },
+      "id": "7753cdd4-fec1-429f-a93c-4f15079f6c5d",
+      "createdTime": "2022-08-29T06:38:33.079Z",
+      "updatedTime": "2022-08-29T06:38:33.079Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please select the category for which you need help"
+        }
+      },
+      "id": "61ca8689-e31a-4d74-8832-e39bc2cc1a04",
+      "createdTime": "2022-08-29T06:46:39.261Z",
+      "updatedTime": "2022-08-29T06:46:39.261Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please enter VM ip for which you are facing issues. Our expert will reach out to you."
+        }
+      },
+      "id": "4039844e-d421-445e-b735-d21bd1a086f5",
+      "createdTime": "2022-08-29T06:50:34.281Z",
+      "updatedTime": "2022-08-29T06:50:34.281Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please mention the Software details which you need to install and its purpose"
+        }
+      },
+      "id": "5e6f9f21-8f2c-43c0-86b9-46988a052272",
+      "createdTime": "2022-08-29T06:54:28.823Z",
+      "updatedTime": "2022-08-29T06:54:28.823Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Please define the description for which you wish to create the ticket"
+        }
+      },
+      "id": "e5199c2f-491f-4eff-bb08-14782e146b99",
+      "createdTime": "2022-08-29T06:55:49.497Z",
+      "updatedTime": "2022-08-29T06:55:49.497Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Thanks for providing email message. Your email address is {b8d45cf2-bac5-4039-b51e-309ab70ba93a}"
+        }
+      },
+      "id": "d34c9bdb-12aa-4a22-b99d-41d363456f71",
+      "createdTime": "2022-08-29T06:40:52.697Z",
+      "updatedTime": "2022-08-29T06:40:52.697Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Thanks for connecting to us. Please help u sin providing the answers for below questions."
+        }
+      },
+      "id": "4afd3ea3-86dd-4500-ad9a-14566fa6233d",
+      "createdTime": "2022-08-29T06:49:03.279Z",
+      "updatedTime": "2022-08-29T06:49:03.279Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Thanks for connecting to us. Please help u sin providing the answers for below questions."
+        }
+      },
+      "id": "c057e85f-d862-463b-bf68-49d2121ef57c",
+      "createdTime": "2022-08-29T06:54:17.142Z",
+      "updatedTime": "2022-08-29T06:54:17.142Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "Thanks for connecting to us. Please help u sin providing the answers for below questions."
+        }
+      },
+      "id": "aad8dbd8-aded-4fcf-8179-4f2d14c3ae5b",
+      "createdTime": "2022-08-29T06:55:34.821Z",
+      "updatedTime": "2022-08-29T06:55:34.821Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "{f5d2e72a-46cc-4c7f-8eef-6800f8394637}"
+        }
+      },
+      "id": "083235a8-d8cd-48b6-b7cf-bcd89da5f598",
+      "createdTime": "2022-08-29T07:22:33.285Z",
+      "updatedTime": "2022-08-29T07:22:33.285Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "{9e0929a4-0c6f-4423-a262-08ed312992b0}"
+        }
+      },
+      "id": "cef12af5-e2f7-498b-a3fd-01a18311cda5",
+      "createdTime": "2022-08-29T07:23:15.863Z",
+      "updatedTime": "2022-08-29T07:23:15.863Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    },
+    {
+      "channelContent": {
+        "web": {
+          "contentFormat": "Markdown",
+          "content": "{f38b08e9-0a50-41aa-a9d1-e4d6d8e47630}"
+        }
+      },
+      "id": "d3656d1d-9390-4af5-ba2a-97238f8a663e",
+      "createdTime": "2022-08-29T07:24:06.414Z",
+      "updatedTime": "2022-08-29T07:24:06.414Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "user-0"
+    }
+  ],
+  "actionDefinitions": [
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"{042c76c0-de95-4d39-a436-4f8d079f751d}\",\"text_1\":\"{042c76c0-de95-4d39-a436-4f8d079f751d}\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "cebba265-6a27-ed11-9db1-6045bda59f61",
+        "title": "Power Virtual Agents Flow Chat Bot -01",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "ChoiceOfCategory",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          },
+          {
+            "name": "IssueDescription",
+            "id": "text_1",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "SuccessMessage",
+            "id": "successmessage",
+            "type": "String",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-08-29T07:15:46Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-08-29T07:20:36Z",
+        "versionNumber": 6763755
+      },
+      "id": "463b48dd-5f3b-4047-9398-eefcf94888c8",
+      "displayName": "Power Virtual Agents Flow Chat Bot -01",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-08-29T07:21:33.533Z",
+      "updatedTime": "2022-08-29T07:21:33.533Z"
+    },
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"{042c76c0-de95-4d39-a436-4f8d079f751d}\",\"text_1\":\"{369fc4b2-0b76-4260-b442-c82b1900fc65}\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "cebba265-6a27-ed11-9db1-6045bda59f61",
+        "title": "Power Virtual Agents Flow Chat Bot -01",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "ChoiceOfCategory",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          },
+          {
+            "name": "IssueDescription",
+            "id": "text_1",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "SuccessMessage",
+            "id": "successmessage",
+            "type": "String",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-08-29T07:15:46Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-08-29T07:20:36Z",
+        "versionNumber": 6763755
+      },
+      "id": "f52279b9-4baa-42cc-bba0-917e65cb411a",
+      "displayName": "Power Virtual Agents Flow Chat Bot -01",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-08-29T07:22:54.711Z",
+      "updatedTime": "2022-08-29T07:22:54.711Z"
+    },
+    {
+      "timeoutInSeconds": 60,
+      "retryCount": 1,
+      "method": 2,
+      "headers": {
+        "accept": "application/json"
+      },
+      "bodyContent": "{\"text\":\"{042c76c0-de95-4d39-a436-4f8d079f751d}\",\"text_1\":\"{6ded7f95-c0ca-4594-8b7a-00891ddeb0f1}\"}",
+      "actionType": "Flow",
+      "flowMetadata": {
+        "id": "cebba265-6a27-ed11-9db1-6045bda59f61",
+        "title": "Power Virtual Agents Flow Chat Bot -01",
+        "description": "Call this flow from Power Virtual Agents.",
+        "httpMethod": 2,
+        "inputParameters": [
+          {
+            "name": "ChoiceOfCategory",
+            "id": "text",
+            "type": "String",
+            "optional": false
+          },
+          {
+            "name": "IssueDescription",
+            "id": "text_1",
+            "type": "String",
+            "optional": false
+          }
+        ],
+        "outputParameters": [
+          {
+            "name": "SuccessMessage",
+            "id": "successmessage",
+            "type": "String",
+            "optional": true
+          }
+        ],
+        "outputSchemaType": "Json",
+        "createdTime": "2022-08-29T07:15:46Z",
+        "isEnabled": true,
+        "lastModifiedTime": "2022-08-29T07:20:36Z",
+        "versionNumber": 6763755
+      },
+      "id": "e97f18c3-bebc-46dd-a2db-7b4153b8d501",
+      "displayName": "Power Virtual Agents Flow Chat Bot -01",
+      "description": "Call this flow from Power Virtual Agents.",
+      "createdTime": "2022-08-29T07:23:33.749Z",
+      "updatedTime": "2022-08-29T07:23:33.749Z"
+    }
+  ],
+  "contextVariables": [
+    {
+      "systemType": "Email",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "7753cdd4-fec1-429f-a93c-4f15079f6c5d"
+        ]
+      },
+      "isGlobal": false,
+      "id": "b8d45cf2-bac5-4039-b51e-309ab70ba93a",
+      "displayName": "VarEmail",
+      "createdTime": "2022-08-29T06:38:33.08Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "namedEntityOptions": [
+        "7d1b43bb-8702-48a6-b6e8-3dd71fa53832",
+        "2ba8174e-c6a6-43a9-b146-e4c09eb3f743",
+        "49000ab3-7011-4610-80e3-8a896ca4c6d8",
+        "42ee7f57-264d-4a62-825e-9fd58ca483e6"
+      ],
+      "messages": {
+        "GetValue": [
+          "61ca8689-e31a-4d74-8832-e39bc2cc1a04"
+        ]
+      },
+      "isGlobal": false,
+      "id": "042c76c0-de95-4d39-a436-4f8d079f751d",
+      "displayName": "VarChoieOfCategory",
+      "createdTime": "2022-08-29T06:46:39.261Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "None",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "4039844e-d421-445e-b735-d21bd1a086f5"
+        ]
+      },
+      "isGlobal": false,
+      "id": "1e701a4a-ed5f-429f-90ff-25582bf3b1aa",
+      "displayName": "VarVMIssueDescription",
+      "createdTime": "2022-08-29T06:50:34.281Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "None",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "5e6f9f21-8f2c-43c0-86b9-46988a052272"
+        ]
+      },
+      "isGlobal": false,
+      "id": "369fc4b2-0b76-4260-b442-c82b1900fc65",
+      "displayName": "VarSoftwareDescription",
+      "createdTime": "2022-08-29T06:54:28.823Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "None",
+      "initializerType": "UserQuestion",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": true,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "messages": {
+        "GetValue": [
+          "e5199c2f-491f-4eff-bb08-14782e146b99"
+        ]
+      },
+      "isGlobal": false,
+      "id": "6ded7f95-c0ca-4594-8b7a-00891ddeb0f1",
+      "displayName": "VarOtherDescription",
+      "createdTime": "2022-08-29T06:55:49.497Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "customTypeId": "dd894bca-d77c-4cee-a9e4-a52c95499fea",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "463b48dd-5f3b-4047-9398-eefcf94888c8",
+      "isGlobal": false,
+      "id": "79ed9ed7-b98a-4b17-b2cd-a5e43fa7d675",
+      "displayName": "",
+      "createdTime": "2022-08-29T07:21:33.534Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('79ed9ed7-b98a-4b17-b2cd-a5e43fa7d675')['successmessage']",
+      "isGlobal": false,
+      "id": "f5d2e72a-46cc-4c7f-8eef-6800f8394637",
+      "displayName": "SuccessMessage",
+      "createdTime": "2022-08-29T07:21:33.534Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "customTypeId": "99df1958-97d8-40ba-860e-463022db6b8d",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "f52279b9-4baa-42cc-bba0-917e65cb411a",
+      "isGlobal": false,
+      "id": "a7e4372a-15ca-497e-a5b5-aca09af5ce4b",
+      "displayName": "",
+      "createdTime": "2022-08-29T07:22:54.712Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('a7e4372a-15ca-497e-a5b5-aca09af5ce4b')['successmessage']",
+      "isGlobal": false,
+      "id": "9e0929a4-0c6f-4423-a262-08ed312992b0",
+      "displayName": "SuccessMessage1",
+      "createdTime": "2022-08-29T07:22:54.713Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "customTypeId": "71940273-9902-43a8-beeb-6e33265ffbdd",
+      "initializerType": "Action",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "actionId": "e97f18c3-bebc-46dd-a2db-7b4153b8d501",
+      "isGlobal": false,
+      "id": "03689b02-6e1b-4215-8d95-c3089a44f64a",
+      "displayName": "",
+      "createdTime": "2022-08-29T07:23:33.749Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    },
+    {
+      "systemType": "String",
+      "initializerType": "Expression",
+      "scope": "Dialog",
+      "greedySlotFillingEnabled": false,
+      "isInput": false,
+      "externalInitializationAllowed": false,
+      "expression": "@parameters('03689b02-6e1b-4215-8d95-c3089a44f64a')['successmessage']",
+      "isGlobal": false,
+      "id": "f38b08e9-0a50-41aa-a9d1-e4d6d8e47630",
+      "displayName": "SuccessMessage2",
+      "createdTime": "2022-08-29T07:23:33.749Z",
+      "updatedTime": "2022-08-29T07:29:17.4410837Z",
+      "createdUserId": "user-0",
+      "updatedUserId": "a14d08c1-fc05-4879-9353-30bd0ddeff2c"
+    }
+  ],
+  "jsonTypes": [
+    {
+      "customTypeSchema": "Json",
+      "id": "dd894bca-d77c-4cee-a9e4-a52c95499fea",
+      "displayName": "Response Json Type for Flow - Power Virtual Agents Flow Chat Bot -01",
+      "createdTime": "2022-08-29T07:21:33.534Z",
+      "updatedTime": "2022-08-29T07:21:33.534Z"
+    },
+    {
+      "customTypeSchema": "Json",
+      "id": "99df1958-97d8-40ba-860e-463022db6b8d",
+      "displayName": "Response Json Type for Flow - Power Virtual Agents Flow Chat Bot -01",
+      "createdTime": "2022-08-29T07:22:54.712Z",
+      "updatedTime": "2022-08-29T07:22:54.712Z"
+    },
+    {
+      "customTypeSchema": "Json",
+      "id": "71940273-9902-43a8-beeb-6e33265ffbdd",
+      "displayName": "Response Json Type for Flow - Power Virtual Agents Flow Chat Bot -01",
+      "createdTime": "2022-08-29T07:23:33.749Z",
+      "updatedTime": "2022-08-29T07:23:33.749Z"
+    }
+  ]
+}

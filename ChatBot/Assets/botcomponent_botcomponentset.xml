@@ -1,0 +1,41 @@
+<botcomponent_botcomponentset>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_89a9f4404cb84e3391db9e087129ee38" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_21a34f1673a24096a99ba0effb63cc1d" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_33d5123770ba4daeafae51b361ddc80a" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_85df75ce08a44a9b82cc8f3fdb25f669" botcomponentidtwo.schemaname="new_customtype_bc87dc041ec74e928bde994c40773e8e_f86fcadfd497444e91ed11c12b059d10">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_85df75ce08a44a9b82cc8f3fdb25f669" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_8a4964498f83424bb3a86295bf7d0952_startover" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_d2198a5ee41a48a5bf70ab8970145a9f_confirmedfailure">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_db1f76b081dc43389df9dd2df7518737_confirmedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart" botcomponentidtwo.schemaname="new_topic_89a9f4404cb84e3391db9e087129ee38">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_d2198a5ee41a48a5bf70ab8970145a9f_confirmedfailure" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_954135cafcd647eaae5999ad91fc08cf_talktoagent">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_db1f76b081dc43389df9dd2df7518737_confirmedsuccess" botcomponentidtwo.schemaname="new_customtype_bc87dc041ec74e928bde994c40773e8e_92610204747047ac8f788f7eecd91118">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_db1f76b081dc43389df9dd2df7518737_confirmedsuccess" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_f56d1a3e522740c78f9fac0939332dbd_goodbye">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+  <botcomponent_botcomponent botcomponentidone.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_dbafebd526364487911b63a2a774389f" botcomponentidtwo.schemaname="new_topic_bc87dc041ec74e928bde994c40773e8e_aeabea4d071f415c8c107e1cb7af5424_assumedsuccess">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_botcomponent>
+</botcomponent_botcomponentset>
